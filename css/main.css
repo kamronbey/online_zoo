@@ -70,6 +70,34 @@ a {
   color: black;
 }
 
+.works .works__title, .zoo .zoo-box .zoo__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.zoo .zoo-box .zoo__link {
+  border: 2px solid #19707D;
+  border-radius: 100px;
+  font-family: "Roboto Mono";
+  padding: 14px 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #19707D;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.zoo .zoo-box .zoo__link:hover {
+  background: #19707D;
+  color: #fff;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -295,12 +323,6 @@ a {
 }
 
 .works .works__title {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #0D444D;
   margin-bottom: 30px;
 }
 
@@ -394,5 +416,203 @@ a {
   background-position: center;
   background-size: 100%;
   z-index: 2;
+}
+
+.zoo {
+  padding: 51px 0;
+}
+
+.zoo .container {
+  position: relative;
+}
+
+.zoo .zoo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.zoo .zoo-box .zoo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zoo .zoo-box .zoo__link .zoo__img__link:hover {
+  color: #19707D;
+}
+
+.zoo .zoo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.zoo .zoo__list .zoo__item {
+  width: 32%;
+  -webkit-box-shadow: 0 5px 10px #E5EAEB;
+          box-shadow: 0 5px 10px #E5EAEB;
+  border-radius: 15px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.zoo .zoo__list .zoo__item .zoo__link__panda {
+  padding: 0;
+}
+
+.zoo .zoo__list .zoo__item .zoo__item__img {
+  margin-left: 100px;
+}
+
+.zoo .zoo__list .zoo__item .zoo__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid #E5EAEB;
+  padding: 20px 10px 10px 10px;
+  margin-top: 20px;
+}
+
+.zoo .zoo__list .zoo__item .zoo__div .zoo__div__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zoo .zoo__list .zoo__item .zoo__item__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2D2D2D;
+}
+
+.zoo .zoo__list .zoo__item .zoo__item__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #919191;
+}
+
+.zoo .zoo__image {
+  position: absolute;
+  right: -5%;
+  bottom: 25px;
+}
+
+.zoo .label {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  position: absolute;
+  right: -4%;
+  bottom: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.zoo .label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  position: absolute;
+  right: -25%;
+  bottom: 5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-right: none;
+  border-bottom: none;
+}
+
+.zoo .checkbox__one {
+  position: absolute;
+  right: -4%;
+  bottom: 30%;
+}
+
+.zoo .label1 {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  position: absolute;
+  right: -5%;
+  bottom: 40%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.zoo .label1::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  position: absolute;
+  right: -20%;
+  bottom: 4px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-top: none;
+  border-left: none;
+}
+
+.zoo .checkbox__two {
+  position: absolute;
+  right: -4%;
+  bottom: 30%;
+}
+
+.zoo .checkbox__two .checkbox__one:checked ~ .label1::before {
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-left: none;
+  border-bottom: none;
+}
+
+.zoo .visually__hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,206 @@
+.zoo{
+    padding: 51px 0;
+    & .container{
+        position: relative;
+    }
+
+    & .zoo-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .zoo__title{
+            @extend %title;
+        }
+
+        & .zoo__link{
+            display: flex;
+            align-items: center;
+            @extend %link;
+
+            & .zoo__img__link:hover{
+                color: #19707D;
+            }
+        }
+    }
+
+    & .zoo__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+
+        & .zoo__item{
+            width: 32%;
+            box-shadow: 0 5px 10px #E5EAEB;
+            border-radius: 15px;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            & .zoo__link__panda{
+                padding: 0;
+            }
+
+            & .zoo__item__img{
+              margin-left: 100px;
+            }
+
+            & .zoo__div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 2px solid #E5EAEB;
+                padding: 20px 10px 10px 10px;
+                margin-top: 20px;
+
+                & .zoo__div__image{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            & .zoo__item__title{
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: #2D2D2D;
+            }
+
+            & .zoo__item__text{
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                color: #919191;
+
+            }
+        }
+    }
+
+    & .zoo__image{
+        position: absolute;
+        right: -5%;
+        bottom: 25px;
+    }
+
+     & .label{
+        width: 30px;
+        height: 30px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        position: absolute;
+        right: -4%;
+        bottom: 50%;
+        transform: rotate(45deg);
+        border-left: none;
+        border-bottom: none;
+        cursor: pointer;
+
+        &::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            position: absolute;
+            right: -25%;
+            bottom: 5px;
+            transform: rotate(90deg);
+           border-right: none;
+           border-bottom: none;
+        }
+    }
+
+    & .checkbox__one{
+        position: absolute;
+        right: -4%;
+        bottom: 30%;
+
+
+        // &::before, &::after{
+        //     position: absolute;
+        //     content: "";
+        //     width: 25px;
+        //     height: 25px;
+        //     border-top: 2px solid black;
+        //     border-right: 2px solid black;
+        //     transform: rotate(45deg);
+        //     bottom: 0;
+        //     transition: 2s;
+        // }
+
+        // &::after{
+        //     right: -5%;
+        // }
+
+      
+        
+    }
+
+    & .label1{
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        position: absolute;
+        right: -5%;
+        bottom: 40%;
+        transform: rotate(45deg);
+        border-top: none;
+        border-right: none;
+        cursor: pointer;
+
+        &::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            position: absolute;
+            right: -20%;
+            bottom: 4px;
+            transform: rotate(90deg);
+           border-top: none;
+           border-left: none;
+        }
+    }
+
+    & .checkbox__two{
+        position: absolute;
+        right: -4%;
+        bottom: 30%;
+
+//         &::before, &::after{
+//             position: absolute;
+//             content: "";
+//             width: 25px;
+//             height: 25px;
+//             border-left: 2px solid black;
+//             border-bottom: 2px solid black;
+//             transform: rotate(45deg);
+//             bottom: 0;
+//         }
+
+//         &::after{
+//             right: -5%;
+//         }
+//     }
+
+   & .checkbox__one:checked ~ .label1::before {
+    border-right:2px solid black;
+    border-top: 2px solid black;
+    border-left:none ;
+    border-bottom: none;
+      }
+
+  } 
+
+  & .visually__hidden{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+  }
+}
